@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+strong,
+b,
+.analytics-table td:nth-child(2),
+.analytics-table td:nth-child(3),
+.vision-object-row b,
+.vision-metric strong {
+  font-family: "JetBrains Mono", "Poppins", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.primary-inputs {
+  background-color: #f6f6f6 !important;
+  outline: none !important;
+  font-size: 13px !important;
+}
+
+.primary-btns {
+  background-color: #14365d !important;
+}
+
+.header-before {
+  position: relative;
+  margin-left: 2%;
+}
+
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.fs-9 {
+  font-size: 0.7rem;
+  height: 2rem;
+}
+
+:root {
+  --display: block;
+  --bs-modal-width: "830px" !important;
+}
+
+.show {
+  backdrop-filter: blur(1px);
+}

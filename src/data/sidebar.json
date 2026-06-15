@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Landing",
+    "icon": "bi-house",
+    "path": "/"
+  },
+  {
+    "title": "Home",
+    "icon": "bi-house-door",
+    "path": "/home"
+  },
+  {
+    "title": "Charts",
+    "icon": "bi-pie-chart",
+    "path": "/charts"
+  },
+  {
+    "title": "Architecture",
+    "icon": "bi-diagram-3",
+    "path": "/architecture"
+  },
+  {
+    "title": "Event Log",
+    "icon": "bi-list-check",
+    "path": "/event-log"
+  },
+  {
+    "title": "MQTT CLI",
+    "icon": "bi-terminal",
+    "path": "/mqtt-cli"
+  },
+  {
+    "title": "Settings",
+    "icon": "bi-gear",
+    "path": "/settings"
+  }
+]

@@ -1,0 +1,326 @@
+.mqtt-cli-page {
+  background:
+    radial-gradient(circle at 18% 8%, rgba(8, 145, 178, 0.13), transparent 28%),
+    radial-gradient(circle at 88% 6%, rgba(22, 163, 74, 0.1), transparent 24%),
+    linear-gradient(180deg, rgba(8, 145, 178, 0.07), transparent 320px),
+    #f6f8fb;
+  color: #102033;
+  min-height: 100vh;
+  padding: 96px 28px 32px;
+  transition:
+    background 0.28s ease,
+    background-color 0.28s ease,
+    color 0.28s ease;
+}
+
+.dark-mode .mqtt-cli-page {
+  background:
+    radial-gradient(circle at 18% 8%, rgba(8, 145, 178, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 6%, rgba(22, 163, 74, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(8, 145, 178, 0.16), transparent 330px),
+    #0f172a;
+  color: #f8fafc;
+}
+
+.mqtt-cli-hero,
+.mqtt-cli-status-grid,
+.mqtt-cli-layout {
+  margin: 0 auto;
+  max-width: 1420px;
+}
+
+.mqtt-cli-hero {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.mqtt-cli-kicker,
+.mqtt-cli-panel-header p,
+.mqtt-cli-status-grid span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.mqtt-cli-hero h1 {
+  color: #102033;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.14;
+  margin: 0 0 8px;
+}
+
+.mqtt-cli-hero span {
+  color: #64748b;
+  display: block;
+  font-size: 15px;
+}
+
+.dark-mode .mqtt-cli-hero h1,
+.dark-mode .mqtt-cli-panel-header h2,
+.dark-mode .mqtt-cli-status-grid strong {
+  color: #f8fafc;
+}
+
+.dark-mode .mqtt-cli-kicker,
+.dark-mode .mqtt-cli-panel-header p,
+.dark-mode .mqtt-cli-hero span,
+.dark-mode .mqtt-cli-status-grid span,
+.dark-mode .mqtt-cli-status-grid p,
+.dark-mode .mqtt-cli-side li {
+  color: #cbd5e1;
+}
+
+.mqtt-cli-status {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #dfe7ef;
+  border-radius: 999px;
+  color: #64748b;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 900;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 14px;
+  text-transform: capitalize;
+}
+
+.mqtt-cli-status.connected {
+  background: #ecfdf5;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.mqtt-cli-status-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 16px;
+}
+
+.mqtt-cli-status-grid article,
+.mqtt-cli-terminal-card,
+.mqtt-cli-side article {
+  background:
+    linear-gradient(135deg, rgba(8, 145, 178, 0.08), transparent 62%),
+    #ffffff;
+  border: 1px solid #dfe7ef;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  min-width: 0;
+  padding: 18px;
+}
+
+.dark-mode .mqtt-cli-status-grid article,
+.dark-mode .mqtt-cli-terminal-card,
+.dark-mode .mqtt-cli-side article {
+  background:
+    linear-gradient(135deg, rgba(8, 145, 178, 0.12), transparent 62%),
+    #162033;
+  border-color: #334155;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+
+.mqtt-cli-status-grid strong {
+  color: #102033;
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.mqtt-cli-status-grid p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+.mqtt-cli-layout {
+  align-items: start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 390px;
+}
+
+.mqtt-cli-panel-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.mqtt-cli-icon {
+  align-items: center;
+  background: #cffafe;
+  border-radius: 8px;
+  color: #0e7490;
+  display: flex;
+  flex: 0 0 42px;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.mqtt-cli-panel-header h2 {
+  color: #102033;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.mqtt-cli-command-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.mqtt-cli-command-row button,
+.mqtt-cli-input button {
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  gap: 6px;
+  justify-content: center;
+  min-height: 38px;
+  padding: 9px 11px;
+}
+
+.mqtt-cli-command-row button {
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  color: #0e7490;
+}
+
+.mqtt-cli-command-row button:hover {
+  background: #cffafe;
+}
+
+.mqtt-cli-input {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: 12px;
+}
+
+.mqtt-cli-input input {
+  background: #f8fafc;
+  border: 1px solid #dfe7ef;
+  border-radius: 8px;
+  color: #102033;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  min-height: 44px;
+  outline: 0;
+  padding: 10px 12px;
+}
+
+.dark-mode .mqtt-cli-input input {
+  background: #111827;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.mqtt-cli-input button {
+  background: #0891b2;
+  border: 1px solid #0891b2;
+  color: #ffffff;
+}
+
+.mqtt-cli-terminal {
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.08), transparent),
+    #020617;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  color: #d1fae5;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 1.62;
+  margin: 0;
+  min-height: 430px;
+  overflow: auto;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
+.mqtt-cli-side {
+  display: grid;
+  gap: 16px;
+}
+
+.mqtt-cli-side code {
+  background: #020617;
+  border-radius: 8px;
+  color: #67e8f9;
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  padding: 13px;
+}
+
+.mqtt-cli-side ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.mqtt-cli-side li {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  .mqtt-cli-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mqtt-cli-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mqtt-cli-side {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .mqtt-cli-page {
+    padding: 84px 14px 24px;
+  }
+
+  .mqtt-cli-hero {
+    flex-direction: column;
+  }
+
+  .mqtt-cli-hero h1 {
+    font-size: 27px;
+  }
+
+  .mqtt-cli-status,
+  .mqtt-cli-side {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .mqtt-cli-status-grid,
+  .mqtt-cli-layout,
+  .mqtt-cli-input {
+    grid-template-columns: 1fr;
+  }
+}
