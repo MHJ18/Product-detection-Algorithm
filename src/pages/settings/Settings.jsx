@@ -43,8 +43,6 @@ const fields = [
     items: [
       { key: "packetIntervalMs", label: "Packet interval ms", type: "number" },
       { key: "heartbeatMs", label: "Heartbeat ms", type: "number" },
-      { key: "sequentialPublisherEnabled", label: "Video conveyor publisher", type: "checkbox" },
-      { key: "sequentialPublishIntervalMs", label: "Conveyor speed setting ms", type: "number" },
     ],
   },
 ];
@@ -90,12 +88,6 @@ function normalizeSettings(settings) {
     mqttTopic: String(settings.mqttTopic || DEFAULT_APP_SETTINGS.mqttTopic).trim(),
     packetIntervalMs: String(settings.packetIntervalMs || DEFAULT_APP_SETTINGS.packetIntervalMs).trim(),
     heartbeatMs: String(settings.heartbeatMs || DEFAULT_APP_SETTINGS.heartbeatMs).trim(),
-    sequentialPublisherEnabled:
-      String(settings.sequentialPublisherEnabled) === "true" ? "true" : "false",
-    sequentialPublishIntervalMs: String(
-      settings.sequentialPublishIntervalMs ||
-        DEFAULT_APP_SETTINGS.sequentialPublishIntervalMs,
-    ).trim(),
   };
 }
 
@@ -122,11 +114,6 @@ function validateSettings(settings) {
 
   if (!settings.mqttTopic || settings.mqttTopic.includes(" ")) {
     errors.push("MQTT Topic is required and cannot contain spaces.");
-  }
-
-  const sequentialInterval = Number(settings.sequentialPublishIntervalMs);
-  if (!Number.isInteger(sequentialInterval) || sequentialInterval < 500 || sequentialInterval > 60000) {
-    errors.push("Conveyor publish interval must be between 500 and 60000 ms.");
   }
 
   return errors;
@@ -369,14 +356,6 @@ function Settings() {
             <div className="settings-readout">
               <span>Object Topic</span>
               <strong>{normalizedDraft.mqttTopic}</strong>
-            </div>
-            <div className="settings-readout">
-              <span>Conveyor Publisher</span>
-              <strong>
-                {normalizedDraft.sequentialPublisherEnabled === "true"
-                  ? `Enabled - ${normalizedDraft.sequentialPublishIntervalMs} ms`
-                  : "Disabled"}
-              </strong>
             </div>
             <div className="settings-readout">
               <span>Current App Socket</span>

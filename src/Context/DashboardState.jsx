@@ -317,7 +317,7 @@ const DashboardState = ({ children }) => {
   }, [appSettings]);
 
   useEffect(() => {
-    if (appRunMode !== "demo" || appSettings.sequentialPublisherEnabled === "true") {
+    if (appRunMode !== "demo") {
       return undefined;
     }
 
@@ -387,7 +387,7 @@ const DashboardState = ({ children }) => {
     const interval = window.setInterval(publishReactPacket, DEMO_PACKET_EVERY_MS);
 
     return () => window.clearInterval(interval);
-  }, [appRunMode, appSettings.sequentialPublisherEnabled, applyStatistics]);
+  }, [appRunMode, applyStatistics]);
 
   useEffect(() => {
     const interval = window.setInterval(() => setNow(Date.now()), 1000);

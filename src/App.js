@@ -50,8 +50,10 @@ function AppShell() {
 }
 
 function App() {
+  const basename = process.env.PUBLIC_URL || "/";
+
   return (
-    <Router>
+    <Router basename={basename}>
       <AppShell />
     </Router>
   );

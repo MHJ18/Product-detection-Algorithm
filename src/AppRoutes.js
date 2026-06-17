@@ -23,6 +23,7 @@ function AppRoutes() {
         <Route path="/event-log" element={<EventLogPage />} />
         <Route path="/mqtt-cli" element={<MqttCli />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );

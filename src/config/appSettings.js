@@ -6,8 +6,6 @@ export const DEFAULT_APP_SETTINGS = {
   mqttTopic: "softcity/hassaan/nicla-vision/statistics",
   packetIntervalMs: "2200",
   heartbeatMs: "5000",
-  sequentialPublisherEnabled: "false",
-  sequentialPublishIntervalMs: "3000",
   wifiSsid: "Hassaan S23",
   wifiPassword: "0987654321",
 };
