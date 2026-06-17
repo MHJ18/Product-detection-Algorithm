@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Product-detection-Algorithm/static/css/main.324daa4a.css",
+    "main.js": "/Product-detection-Algorithm/static/js/main.7ede5d52.js",
+    "static/media/poppins-devanagari-400-normal.woff": "/Product-detection-Algorithm/static/media/poppins-devanagari-400-normal.421fe9869ff4b58e2d7b.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/Product-detection-Algorithm/static/media/poppins-devanagari-400-normal.d2ee5e6ea17bffe3bf58.woff2",
+    "static/media/cctv.png": "/Product-detection-Algorithm/static/media/cctv.b103e6b1077fd3f0e801.png",
+    "static/media/jetbrains-mono-latin-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-latin-400-normal.1fef352a4021940e309a.woff",
+    "static/media/jetbrains-mono-latin-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-latin-400-normal.d04352f240062b100fba.woff2",
+    "static/media/iot.png": "/Product-detection-Algorithm/static/media/iot.617b07c0495a1d81a454.png",
+    "static/media/poppins-latin-400-normal.woff": "/Product-detection-Algorithm/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
+    "static/media/jetbrains-mono-latin-ext-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-latin-ext-400-normal.dfdc51c009ca3dea7613.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/Product-detection-Algorithm/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/Product-detection-Algorithm/static/media/poppins-latin-ext-400-normal.7e12786771ac4a8e6a5c.woff",
+    "static/media/jetbrains-mono-latin-ext-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-latin-ext-400-normal.e83b764e84e73968db26.woff2",
+    "static/media/jetbrains-mono-cyrillic-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-cyrillic-400-normal.d0dbe121eb8ccfff69fd.woff",
+    "static/media/jetbrains-mono-greek-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-greek-400-normal.55220d4dce9386883dd6.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/Product-detection-Algorithm/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
+    "static/media/jetbrains-mono-vietnamese-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-vietnamese-400-normal.411bbf704034dd802498.woff",
+    "static/media/jetbrains-mono-cyrillic-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-cyrillic-400-normal.f69e1e24f04a6ce942c0.woff2",
+    "static/media/jetbrains-mono-greek-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-greek-400-normal.3a4578ae9901384175e2.woff2",
+    "static/media/jetbrains-mono-vietnamese-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-vietnamese-400-normal.aa664ef15f2e285e9dda.woff2",
+    "index.html": "/Product-detection-Algorithm/index.html",
+    "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff": "/Product-detection-Algorithm/static/media/jetbrains-mono-cyrillic-ext-400-normal.831e0db23a3b56373d02.woff",
+    "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff2": "/Product-detection-Algorithm/static/media/jetbrains-mono-cyrillic-ext-400-normal.7347c7bfed47f1ef0b25.woff2",
+    "main.324daa4a.css.map": "/Product-detection-Algorithm/static/css/main.324daa4a.css.map",
+    "main.7ede5d52.js.map": "/Product-detection-Algorithm/static/js/main.7ede5d52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.324daa4a.css",
+    "static/js/main.7ede5d52.js"
+  ]
+}
